@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://gv6sx8chwjhy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qke16"]
+size = Vector2(8, 32)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_b57mv"]
+load_path = "res://.godot/imported/Dungeon.png-eaa03b5bbd91c4698f83dc3d9d28ef18.ctex"
+
+[node name="Wall" type="RigidBody2D" unique_id=1419184682]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1434175262]
+shape = SubResource("RectangleShape2D_qke16")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1741284914]
+texture = SubResource("CompressedTexture2D_b57mv")
+region_enabled = true
+region_rect = Rect2(49, 31, 8, 33)

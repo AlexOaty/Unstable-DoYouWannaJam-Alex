@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://6gegliey1ekf"]
+
+[ext_resource type="Script" uid="uid://dup83feu8gv77" path="res://Scripts/spawner.gd" id="1_iukft"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_a5mse"]
+distance = -55.0
+
+[node name="Game" type="Node2D" unique_id=506273267]
+script = ExtResource("1_iukft")
+
+[node name="MainCamera" type="Camera2D" parent="." unique_id=887837880]
+zoom = Vector2(2.82, 2.82)
+
+[node name="Border" type="StaticBody2D" parent="." unique_id=1115996338]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Border" unique_id=821082237]
+shape = SubResource("WorldBoundaryShape2D_a5mse")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=536907364]
+
+[node name="Button" type="Button" parent="CanvasLayer" unique_id=1183977794]
+offset_left = 27.0
+offset_top = 519.0
+offset_right = 171.0
+offset_bottom = 613.0
+text = "wall"
+
+[node name="Button2" type="Button" parent="CanvasLayer" unique_id=1761952505]
+offset_left = 176.0
+offset_top = 519.0
+offset_right = 313.0
+offset_bottom = 614.0
+text = "wall"
+
+[node name="Button3" type="Button" parent="CanvasLayer" unique_id=99157202]
+offset_left = 320.0
+offset_top = 517.0
+offset_right = 456.0
+offset_bottom = 613.0
+text = "wall"
